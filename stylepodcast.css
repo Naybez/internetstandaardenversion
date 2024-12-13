@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+body {
+    background: linear-gradient(#ffff, #f1cfcf); /*w3c gradient code, W3Schools.com. (z.d.). https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+    margin: 0 auto; 
+    font-family: "Rubik", sans-serif; 
+    line-height: 1.6; 
+}
+
+header nav {
+    background-color: #cbc8ec;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    color: #db4880;
+    font-weight: 500; 
+    font-style: normal;
+}
+footer {
+    background-color: #cbc8ec;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-size: small;
+    color: black;
+    font-weight: 500; 
+    font-style: normal;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+    gap: 2em; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+nav ul li a {
+    display: block;
+    color: #db4880;
+    text-align: center;
+    padding: 1em 2em; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #f7ecd6; 
+}
+
+h1, h2, h3, h4 {
+    font-family: "Rubik", sans-serif;
+    color: #231F20;
+    margin-bottom: 1.5em; 
+    margin-left: 10%;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: normal; 
+}
+
+.flex-horizontal,
+.next-toeachother {
+    display: flex;
+    align-items: center;
+    gap: 1.5em; 
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        gap: 1em; 
+    }
+
+    nav ul li a {
+        padding: 1em 1.5em; 
+    }
+
+    .flex-horizontal,
+    .next-toeachother {
+        flex-direction: column; 
+        gap: 1em; 
+    }
+}
+
+/*bronvermelding: 
+W3Schools.com. (z.d.-a). https://www.w3schools.com/css/css_navbar_horizontal.asp 
+W3Schools.com. (z.d.-b). https://www.w3schools.com/css/css3_gradients.asp
+
+chat gpt [ prompt: how can I make the header be full screen ? header nav {
+    background-color: #cbc8ec;
+    font-family: "Rubik", sans-serif;
+    color: #f7ecd6;
+    font-weight: 500; 
+    font-style: normal;}
+   -  prompt: can u check my css code (code on css file) and does it aligh with the criteria?(checjlist van dlo) (the answer was yes), explain code (explain my own code)?, does this code (footer {
+    background-color: #cbc8ec;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-size: small;
+    color: black;
+    font-weight: 500; 
+    font-style: normal;)  match the criteria? }
